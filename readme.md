@@ -38,10 +38,9 @@ transformation tasks:
 - remove unnecessary phrases re.sub((<some unnecessary phrase 1>|<some unnecessary phrase 2>), '', text_content)
 - match all expressions with values 0 to 9 and with at least 2 but not more than 3 digits re.search("(^C|^P)([0-9]{2,3})", content).group()
 
+- probable entities of corpus juris to identify: CITATION, AMOUNT, COMPANY, CONSTRAINT, COPYRIGHT, COURT, DATE, DEFINITION, DISTANCE, DURATION, GEOENTITY, PERCENT, REGULATION, TRADEMARK, JUDGEMENT, GAZETTE, PROCEEDINGS, ARTICLE, SECTION, CLAUSE, PARAGRAPH, DEFENDANT, PROSECUTOR, APPEAL, APPELANT, PLAINTIFF, INVOLVED ENTITY, ADVOCATE, LEARNED COUNSEL, ROLE, JUDGE, OFFENCE, ACCUSATION, OBJECTION, JURISDICTION, PENALTY, COMPENSATION, EVIDENCE, EVIDENCE DESCRIPTION, ACT, CIRCULAR, SERIES, CASE, GENERAL REGISTRY NUMBER, PETITION, RULE, ORGANIZATION
 
-- probable entities of corpus juris to identify: acts, amounts, citations, companies, constraints, copyright, courts, dates, definitions, distances, durations, geoentities, percents, regulations, trademarks. GET EXAMPLE 
-
-loading tasks:
+Petitioner: Another word for plaintiff, the person starting the lawsuit. Plaintiff: The person who sues or starts a civil case, also called the petitioner or the complainant.
 
 - upload or indicate all possible entities in the web app, expertise of legal practitioner would be better
 - convert page text content into individual text files
@@ -373,3 +372,7 @@ functional:location:person:1:1:hasLocation
 functional:attribute:person:N:1:hasAttributes
 functional:ideology:political_party:N:1:hasIdeology
 functional:ideology:religion:N:1:hasIdeology
+
+
+loading tasks:
+
